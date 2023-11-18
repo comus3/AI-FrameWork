@@ -13,4 +13,6 @@ layer* create_layer(int num_neurons, int num_weights_per_neuron);
 void initialize_layer(layer *l, int num_neurons, int num_weights_per_neuron);
 void destroy_layer(layer *l);
 
+
+
 #endif // LAYER_H
