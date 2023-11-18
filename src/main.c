@@ -1,28 +1,42 @@
-#include "../include/layer.h"
+// src/main.c
+
+#include "../include/main.h"
 #include <stdio.h>
 
-layer* lay;  // Global variable for layers
+// Global variables
+extern layer* lay;  // Assuming you have a global variable for the neural network layers
 
-// Function prototype for create_architecture
-int create_architecture();
+// Function to initialize neural network architecture
+void initialize_neural_network() {
+    // Add your initialization logic here
+}
 
+// Function to train the neural network
+void train_neural_network() {
+    // Add your training logic here
+}
+
+// Function to test the neural network
+void test_neural_network() {
+    // Add your testing logic here
+}
+
+// Main program
 int main() {
-    // ... (existing code)
+    // Initialize the neural network architecture
+    initialize_neural_network();
 
-    int result = create_architecture();
+    // Train the neural network
+    train_neural_network();
 
-    if (result == SUCCESS_CREATE_ARCHITECTURE) {
-        // Your code for using the architecture
-        // ...
+    // Test the neural network
+    test_neural_network();
 
-        // Free memory when done
-        for (int i = 0; i < num_layers; ++i) {
-            destroy_layer(&lay[i]);
-        }
-        free(lay);
-    } else {
-        printf("Error creating architecture\n");
+    // Free memory when done
+    for (int i = 0; i < num_layers; ++i) {
+        destroy_layer(&lay[i]);
     }
+    free(lay);
 
     return 0;
 }
