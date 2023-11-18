@@ -1,7 +1,7 @@
 // src/architecture.c
 
 #include "../include/layer.h"
-#include "your_weight_init_file.h"  // Include the file for weight initialization
+#include "../include/weight_init.h"  
 
 int create_architecture() {
     int i = 0, j = 0;
